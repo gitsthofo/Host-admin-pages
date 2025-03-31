@@ -1,0 +1,166 @@
+:root {
+    --main-font-family: audiowide;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.99);
+}
+
+/**************Main section**************************/
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    /*width: calc(45rem - 100%vw);*/
+    width: clamp(40rem, 85%, 100vw);
+    height: 100vh;
+    margin: 5%;
+    background-color: rgba(4, 45, 12, 0.791);
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.bg-img {
+    background-image: url(/images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 90%;
+   
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.638);
+    width: 100%;
+    height: 190px;
+    margin-top: 59px;   
+}
+.image-wrapper, .styles-h1{
+    font-family: var(--main-font-family);
+    font-size: 77px;
+    color: white; 
+}
+ .authur{
+    font-family: var(--main-font-family);
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin-top: 62%;
+  
+}
+
+
+.image-wrapper img { 
+    width: 140px;
+}
+/**************Second section******************/
+.align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--main-font-family);
+    font-size: clamp(1.2em, 100%, 1.2em);
+    
+}
+.align-center p{
+    color: rgba(221, 209, 209, 0.736); 
+    width: clamp(600px, 100%, 43rem); 
+    padding-left: .5rem;    
+}
+.form-container {
+    padding-top: 1.5rem;
+   background-color: rgba(1, 18, 4, 0.318); 
+}
+.form-container > h1{
+   margin-left: 0.5rem;
+}
+.style-form {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.form-container h1 {
+    margin-block: 0.95rem;
+    color: white;
+    font-size: 77px;
+}
+.style-form fieldset {
+    max-width: 100%;          
+    width: 47.9%;
+    background-color: rgba(0, 0, 0, 0.324);
+    padding: 0.90rem;
+    border-radius: 5px;
+}
+.style-form,fieldset, label {
+    color: rgba(221, 209, 209, 0.736);  
+}
+.style-form,
+input {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus{
+outline: auto;
+outline-color: blue;
+}
+.bt-container{
+    display: flex;
+    height: 80px;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.bt-container button{
+    margin-block: 0.1rem;
+    margin-left: 0.9rem;
+    font-family: var(--main-font-family);
+    font-size: large;
+    width: 309px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(11, 139, 11);
+    color: whitesmoke;
+}
+
+.bt-container button:hover{
+    background-color: rgba(41, 86, 36, 0.736);
+    color: rgba(141, 213, 133, 0.736); 
+}
+.bt-container,a{
+    color: rgba(141, 213, 133, 0.736); 
+    text-decoration-color: rgb(11, 139, 11);
+}
+.bt-container,a:hover{
+    text-decoration: none;
+   color: rgb(11, 139, 11);
+}
+.bt-container > p{
+    margin-left: 0.8rem;
+    margin-block: 0.9rem;
+  
+}
